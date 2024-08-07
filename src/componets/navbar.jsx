@@ -20,7 +20,7 @@ const Navbar = () => {
     <div>
       <nav className="bg-black border-gray-600 border-b-2 text-white p-3 flex items-center justify-between">
         <div className="flex items-center space-x-32">
-          <button onClick={toggleSidebar} className="text-white pl-40">
+          <button onClick={toggleSidebar} className="text-white pl-8">
             <svg
               className="w-18 h-8"
               fill="none"
@@ -36,35 +36,35 @@ const Navbar = () => {
               ></path>
             </svg>
           </button>
-          <div className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-blue-400 via-yellow-300 to-blue-300">
+          <div className="text-2xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-600 via-yellow-200 to-cyan-800">
             APTO API
           </div>
         </div>
 
-        <ul className="flex space-x-4 items-center">
+        <ul className="flex space-x-4 items-center p-2 mr-20 ">
           <Link
             href="/api-hub"
-            className="hover:text-gray-800 text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-white hover:border-white-500 hover:rounded-md"
+            className="text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-gray-600 hover:border-white-500 hover:rounded-md"
           >
             Home
           </Link>
           <Link
             href="/api-hub"
-            className="hover:text-gray-800 text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-white hover:border-white-500 hover:rounded-md"
+            className=" text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-gray-600 hover:border-white-500 hover:rounded-md"
           >
             who are we
           </Link>
 
           <Link
             href="/api-hub"
-            className="hover:text-gray-800 text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-white hover:border-white-500 hover:rounded-md"
+            className=" text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-gray-600 hover:border-white-500 hover:rounded-md"
           >
             Pricing
           </Link>
 
           <Link
             href="/api-hub"
-            className="hover:text-gray-800 text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-white hover:border-white-500 hover:rounded-md"
+            className= "text-xl border border-transparent px-4 py-2 transition-all duration-300 ease-in-out  hover:bg-gray-600 hover:border-white-500 hover:rounded-md"
           >
             Contact
           </Link>
@@ -84,12 +84,12 @@ const Navbar = () => {
         onClick={toggleSidebar}
       >
         <div
-          className="w-80 bg-black h-full shadow-md p-4"
+          className="w-80 bg-black h-full shadow-md p-8"
           onClick={(e) => e.stopPropagation()}
         >
           <button className="text-white mb-4" onClick={toggleSidebar}>
             <svg
-              className="w-8 h-8"
+              className="w-14 h-9"
               fill="none"
               stroke="currentColor"
               viewBox="0 0 24 24"
@@ -98,7 +98,7 @@ const Navbar = () => {
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
-                strokeWidth="4"
+                strokeWidth="3"
                 d="M6 18L18 6M6 6l12 12"
               ></path>
             </svg>
@@ -107,7 +107,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/api-hub"
-                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-blue-500 hover:border-blue-500 hover:rounded-md"
+                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-gray-600 hover:rounded-md"
               >
                 API Hub
               </Link>
@@ -115,7 +115,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/api-hub"
-                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-blue-500 hover:border-blue-500 hover:rounded-md"
+                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-gray-600 hover:rounded-md"
               >
                 Youtube Thumbail
               </Link>
@@ -123,7 +123,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/api-hub"
-                className="text-white  border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-blue-500 hover:border-blue-500 hover:rounded-md"
+                className="text-white  border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-gray-600 hover:rounded-md"
               >
                 Your API Hub
               </Link>
@@ -131,7 +131,7 @@ const Navbar = () => {
             <li>
               <Link
                 href="/api-hub"
-                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-blue-500 hover:border-blue-500 hover:rounded-md"
+                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-gray-600 hover:rounded-md"
               >
                 API Hub
               </Link>
@@ -139,14 +139,14 @@ const Navbar = () => {
             <li>
               <Link
                 href="/api-hub"
-                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-blue-500 hover:border-blue-500 hover:rounded-md"
+                className="text-white border border-transparent px-4 py-2 transition-all duration-300 ease-in-out hover:text-white hover:bg-gray-600 hover:rounded-md"
               >
                 Youtube Thumbail
               </Link>
             </li>
           </ul>
         </div>
-      </div>
+      </div> 
     </div>
   );
 };
